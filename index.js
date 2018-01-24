@@ -56,7 +56,7 @@ function removeFromCart(item) {
 
 
 function placeOrder(cardNumber) {
-  var computer = {person:cardNumber}
+  var computer = {shopper:[cardNumber]}
   for (var i = 0; i < computer.length; i++) {
     if (computer[i].hasOwnProperty(cardNumber)) {
       console.log(`Your total cost is $${sum}, which will be charged to the card ${cardNumber}.`)
