@@ -11,7 +11,7 @@ function setCart(c) {
 
 function addToCart(itemName) {
  var itemPrice = Math.floor(Math.random() * 101)
- var x = {[itemName]:itemPrice}
+ var x = {itemName:itemPrice}
  cart.push(x)
 console.log(`${itemName} has been added to your cart.`)
 return cart
@@ -56,5 +56,11 @@ function removeFromCart(item) {
 
 
 function placeOrder(cardNumber) {
+  var computer = {person:cardNumber}
+  for (var i = 0; i < computer.length; i++) {
+    if (computer[i].hasOwnProperty(cardNumber)) {
+      console.log(`Your total cost is $${sum}, which will be charged to the card ${cardNumber}.`)
+  } else {
+    
+  }
 
-}
