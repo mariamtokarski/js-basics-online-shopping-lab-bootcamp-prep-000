@@ -56,8 +56,5 @@ function removeFromCart(item) {
 
 
 function placeOrder(cardNumber) {
- while (cardNumber = onFile) {
 
- }
- }
 }
